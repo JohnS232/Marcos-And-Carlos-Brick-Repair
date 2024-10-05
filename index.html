@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos And Carlos Brick Repair.</title>
+  
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Google Fonts --> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+ <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-d5ZWywb5/YbCFwlqKZ3r/We1Qo54Q9uCZP5pj7q1O3FBNZKgGb+Fw9+0blbw8I6Nfs6Q1/1B0N+yJmg7Xr2fg==" crossorigin="anonymous" />
+
+  <!-- Link to Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() { emailjs.init("FO3VbMBV-la7xfixE");  })(); // Replace 'YOUR_EMAILJS_PUBLIC_KEY' with your actual EmailJS Public Key. 
+  </script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+(function(){ emailjs.init({
+  publicKey: "FO3VbMBV-la7xfixE", }); })();
+</script>
+
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">Marcos And Carlos Brick Repair.</a>
+
+      <!-- Mobile menu toggle button (hamburger) -->
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Menu Items -->
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#services" class="navbar__links" id="services-page">Services</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#gallery" class="navbar__links" id="gallery-page">Gallery</a>
+          </li>
+        <li class="navbar__btn">
+          <a href="#contact-us" class="button" id="contact-page">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Marcos And Carlos Brick Repair</h1>
+      <p class="hero__description">From Repairs To Renovations, We Are Here For You.</p>
+      
+      <!-- Contact Us Buttons -->
+    <div class="contact-buttons-container">
+        <a href="tel:+12484208594" class="btn btn-primary contact-btn">Call Us</a>
+        <a href="mailto:hernan1solis@hotmail.com" class="btn btn-secondary contact-btn">Email Us</a>
+    </div>
+    </div>
+</div>
+  
+
+  <!-- About Section -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+          <!-- Font Awesome Icon -->
+          <i class="fas fa-layer-group fa-5x"></i>
+        </div>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <p>Since founding Marcos & Carlos Masonry Brick/Stone Repair in 2008, we've built our business on respect, trust, and exceptional customer service—values we continue to uphold today. Serving Davisburg, Michigan, we take pride in offering top-tier masonry services to our community, treating our clients like neighbors and friends. With over 15 years of experience, we provide expert, comprehensive repairs, diagnosing problem areas efficiently and delivering fast, reliable results. We offer free estimates before every job, ensuring transparency and keeping you informed every step of the way.</p>
+          <button class="main__btn"><a href="#contact-us">Schedule Appointment</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Services Section -->
+<div class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="services__wrapper">
+        <!-- Porches Repair -->
+        <div class="services__card">
+            <img src="images/BrickPorchGallery.jpg" alt="Porch Repair">
+            <h2>Porches Repair</h2>
+            <p>Let's bring your outdoor vision to life. High-quality porch installation and repairs in Davisburg, Michigan.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+
+        <!-- Brick/Block Wall Repair -->
+        <div class="services__card">
+            <img src="images/BrickwallrepairGallery.jpg" alt="Brick/Block Wall Repair">
+            <h2>Brick/Block Wall Repair</h2>
+            <p>Fast, economical repairs for superior brick and block structures. Save time and money with our expert solutions.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+
+        <!-- Stone Work Repair -->
+        <div class="services__card">
+            <img src="images/StoneRepairGallery.webp" alt="Stone Work Repair">
+            <h2>Stone Work Repair</h2>
+            <p>Enhance your home with durable and beautiful stone installations. Built to last, built on integrity.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+
+        <!-- Stone Column Installation -->
+        <div class="services__card">
+            <img src="images/Stonecolumn.jpg" alt="Stone Column Installation">
+            <h2>Stone Column Installation</h2>
+            <p>Expert installation of stone columns for a stunning, timeless look. Add strength and beauty to your property.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+
+        <!-- Stone/Brick Chimneys Installation -->
+        <div class="services__card">
+            <img src="images/BrickChimney.jpg" alt="Stone/Brick Chimneys Installation">
+            <h2>Stone/Brick Chimneys Installation</h2>
+            <p>Beautiful stone or brick chimneys installed to enhance your homess style and functionality.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+
+        <!-- Limestone Installation -->
+        <div class="services__card">
+            <img src="images/LimestoneInstallation.jpg" alt="Limestone Installation">
+            <h2>Limestone Installation</h2>
+            <p>Professional limestone installations for homes and businesses. Add value and style to your property.</p>
+            <button class="services__btn"><a href="#contact-us">Book</a></button>
+        </div>
+    </div>
+</div>
+
+    <!-- Locations We Cover Section -->
+    <div class="locations" id="locations">
+        <h1>Locations We Cover</h1>
+            <ul class="locations__list">
+                 <li>Davisburg</li>
+                <li>Detroit</li>
+                <li>Ann Arbor</li>
+                <li>Clarkston</li>
+                <li>Rochester</li>
+                <li>Waterford</li>
+                <li>West Bloomfield</li>
+                 <li>Brighton</li>
+            </ul>
+    </div>
+  
+
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <div class="gallery__container">
+        <h2>Our Completed Projects</h2>
+        <div class="gallery__grid">
+            <div class="gallery__item">
+                <img src="images/Gallery1.webp" alt="Completed project 1">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery2.webp" alt="Completed project 2">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery3.webp" alt="Completed project 3">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery4.jpg" alt="Completed project 4">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery5.jpg" alt="Completed project 5">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery6.jpg" alt="Completed project 6">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery7.jpg" alt="Completed project 7">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery8.jpg" alt="Completed project 8">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery9.jpg" alt="Completed project 9">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery11.jpg" alt="Completed project 10">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery12.jpg" alt="Completed project 11">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery13.jpg" alt="Completed project 12">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery14.jpg" alt="Completed project 13">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery15.jpg" alt="Completed project 14">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery16.jpg" alt="Completed project 15">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery17.jpg" alt="Completed project 16">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery18.jpg" alt="Completed project 17">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery19.jpg" alt="Completed project 18">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery20.jpg" alt="Completed project 19">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery21.jpg" alt="Completed project 20">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery22.jpg" alt="Completed project 21">
+            </div>
+            <div class="gallery__item">
+                <img src="images/Gallery23.jpg" alt="Completed project 22">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section (with the contact form and map) -->
+<div class="main" id="contact-us">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Get A Detailed Quote!</h1>
+        <form id="contact-form">
+          <!-- Name Input -->
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+  
+          <!-- Email Input -->
+          <div class="form__group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+  
+          <!-- Phone Input -->
+          <div class="form__group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" />
+          </div>
+  
+          <!-- Address Input -->
+          <div class="form__group">
+            <label for="address">Address (Street, City, Zip Code)</label>
+            <input type="text" id="address" name="address" placeholder="Address" />
+          </div>
+  
+          <!-- Date Picker -->
+          <div class="form__group">
+            <label for="appointment-date">Appointment Date</label>
+            <input type="date" id="appointment-date" name="appointment_date" required />
+          </div>
+  
+          <!-- Time Picker -->
+          <div class="form__group">
+            <label for="appointment-time">Appointment Time</label>
+            <input type="time" id="appointment-time" name="appointment_time" required />
+          </div>
+  
+          <!-- Message Input -->
+          <div class="form__group">
+            <label for="message">Let us know the details of what you are looking for, and we'll contact you with a quote.</label>
+            <textarea id="message" name="message" rows="4" placeholder="Details"></textarea>
+          </div>
+  
+          <!-- Attach File -->
+          <div class="form__group">
+            <label for="files">Attach Files</label>
+            <input type="file" id="files" name="files[]" multiple />
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" class="form__btn">Send</button>
+        </form>
+        
+        <div class="map__container">
+            <h2 class="section-heading">Our Location</h2>
+            <div class="map-wrapper">
+                <iframe 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 10px;" 
+                    loading="lazy" 
+                    allowfullscreen 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLbBzSmpqjxz_YA7b5rtYEkWewLEdGVZw&q=Davisburg+Michigan">
+                </iframe>
+            </div>
+            <div id="distance-result" style="display:none;">
+                <h3>Distance from Your Location to Our Office:</h3>
+                <p id="distance"></p>
+                <p id="duration"></p>
+            </div>
+        </div>
+
+<!-- Include the Google Maps API library with Distance Matrix -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLbBzSmpqjxz_YA7b5rtYEkWewLEdGVZw&libraries=places"></script>
+
+<script>
+  // Replace with your business address
+  const businessAddress = "Davisburg Springfield Township, MI";
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get user's address from the form
+    const userAddress = document.getElementById('address').value;
+
+    // Initialize Google Maps Distance Matrix service
+    const service = new google.maps.DistanceMatrixService();
+
+    // Make the request to calculate distance
+    service.getDistanceMatrix(
+      {
+        origins: [userAddress],
+        destinations: [businessAddress],
+        travelMode: 'DRIVING',
+      },
+      function(response, status) {
+        if (status === 'OK') {
+          const result = response.rows[0].elements[0];
+          const distance = result.distance.text;
+          const duration = result.duration.text;
+
+          // Display the result
+          document.getElementById('distance').textContent = `Distance: ${distance}`;
+          document.getElementById('duration').textContent = `Estimated Travel Time: ${duration}`;
+          document.getElementById('distance-result').style.display = 'block';
+        } else {
+          alert('Error calculating distance: ' + status);
+        }
+      }
+    );
+  });
+</script>
+  
+ <!-- EmailJS Form Handling Script -->
+ <script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent traditional form submission
+
+    emailjs.sendForm('service_ud7g4vt', 'template_qw69fcc', this)
+      .then(function() {
+        alert('SUCCESS! Your appointment request has been sent.');
+      }, function(error) {
+        alert('FAILED... Please try again.' + JSON.stringify(error));
+      });
+  });
+</script>
+
+  <!-- Bootstrap JS via CDN (for components like navbar, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- Footer Section -->
+<div class="footer__container">
+    <div class="footer__content">
+      <!-- Contact Information -->
+      <div class="footer__column">
+        <h4>Contact Information</h4>
+        <p><strong>Business Hours:</strong></p>
+        <p>Monday - Saturday: 8:00 AM - 5:00 PM</p>
+        <p>Sunday: Closed</p>
+        <p><strong>Phone:</strong> <a href="tel:+12484208594">+1(248)420-8594</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hernan1solis@hotmail.com">hernan1solis@hotmail.com</a></p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer__column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Facebook and Payment Methods -->
+      <div class="footer__column">
+        <h4>Follow Us on Facebook</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="payment-methods">
+          <h4>Accepted Payment Methods</h4>
+          <p>Zelle, Check, or Cash</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Section -->
+    <div class="footer__bottom">
+      <p class="website__rights">© Marcos And Carlos Brick Repair. 2024. All Rights Reserved.</p>
+      <p>Developed by John Solis, Student at The University of Texas at Dallas</p>
+      <a href="#" class="back-to-top">Back to Top</a>
+    </div>
+</div>
+  
+  <!-- Link to JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
